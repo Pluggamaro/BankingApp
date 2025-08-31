@@ -14,6 +14,21 @@ public class BankAccount{
         }
     }
 
-    
+    public void deposit(double amount){
+        //guarding amount from negativity
+        if(amount <= 0){
+            System.err.println("Deposit must be greater that 0!");
+            return;
+        }
+        this.balance += amount;
+        System.out.printf("Successully deposited $%.2f.%n", amount);
+    }
+
+    public void withdraw(double amount){
+        if(amount <= 0){
+            System.err.println("Amount must be greater than 0!");
+            return;
+        }
+    }
 
 }
