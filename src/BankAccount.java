@@ -38,4 +38,10 @@ public class BankAccount{
         System.out.printf("Success! Withdrew R%.2f.%n", amount);
     }
 
+    public void checkBalance(){
+        System.out.println("===BALANCE===");
+        System.out.println("Account Holder: " + this.accountHolder);
+        System.out.printf("Current Balance: R%.2f", this.balance);
+    }
+
 }
